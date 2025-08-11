@@ -1,5 +1,4 @@
 # To-Do List
-[![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/Rishiprasadraut/To-Do-List)
 
 ## Live Preview
 You can view a live version of the application here:
