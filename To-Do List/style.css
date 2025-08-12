@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: "poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
 }
 
@@ -10,7 +10,6 @@
   min-height: 100vh;
   background: linear-gradient(
     90deg,
-    /* rgba(2, 0, 36, 1) 0%, */
     rgba(31, 31, 255, 1) 47%,
     rgba(0, 212, 255, 1) 100%
   );
@@ -54,7 +53,7 @@ input {
   outline: none;
   background: transparent;
   padding: 10px;
-  font-weight: 14px;
+  font-size: 14px;
 }
 
 button {
@@ -66,6 +65,7 @@ button {
   font-size: 16px;
   cursor: pointer;
   border-radius: 40px;
+  transition: background-color 0.3s ease;
 }
 
 button:active {
@@ -118,4 +118,52 @@ ul li span {
 
 ul li span:hover {
   background: #edeef0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .todo-app {
+    padding: 30px 20px 50px;
+    margin: 60px auto 20px;
+  }
+
+  button {
+    padding: 14px 30px;
+    font-size: 14px;
+  }
+
+  input {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .todo-app {
+    padding: 20px 15px 40px;
+    margin: 40px auto 15px;
+  }
+
+  .row {
+    flex-direction: column;
+    align-items: stretch;
+    padding-left: 10px;
+  }
+
+  input {
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  button {
+    padding: 12px;
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+
+  ul li {
+    font-size: 15px;
+    padding: 10px 8px 10px 40px;
+  }
 }
